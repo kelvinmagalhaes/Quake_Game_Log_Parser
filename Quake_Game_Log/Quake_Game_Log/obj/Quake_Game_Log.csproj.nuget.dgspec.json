@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj": {}
+    "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj": {
+    "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj",
+        "projectUniqueName": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj",
         "projectName": "Quake_Game_Log",
-        "projectPath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj",
+        "projectPath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj",
         "packagesPath": "C:\\Users\\Kelvin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log\\obj\\",
+        "outputPath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

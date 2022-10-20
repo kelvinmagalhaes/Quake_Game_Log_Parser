@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "meQPr/AO/9qh7EYlC6/DZ5dpfv2e2RmmeqpXH/QbAPWbV91LHzlzkz2jWsP7Dk2gWRrsy3ELAgeciDsuaOMBww==",
+  "dgSpecHash": "R8hxVdEJM9YDgErFkPNdr/fIX5sFknrO/1xg59m3buI3aXGHVXLnqA/K+BWHVxeuClMjmQ6uEHPq/nSLR5LA6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log_Tests\\Quake_Game_Log_Tests.csproj",
+  "projectFilePath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log_Tests\\Quake_Game_Log_Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kelvin\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Kelvin\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",

@@ -7,30 +7,30 @@ namespace Quake_Game_Log_Tests
 {
     public class Read_File_Tests
     {
-        [Fact]
-        public void Delete_File()
-        {
-            //Arrange
-            bool result;
-            //Act
-            result = FileTools.DeleteFiles();
-            //Assert
-            Assert.True(result);
-        }
+        //[Fact]
+        //public void Delete_File()
+        //{
+        //    //Arrange
+        //    bool result;
+        //    //Act
+        //    result = FileTools.DeleteFiles();
+        //    //Assert
+        //    Assert.True(result);
+        //}
 
-        /// <summary>
-        /// Can find the file log?
-        /// </summary>
-        [Fact]
-        public void Find_File()
-        {
-            //Arrange
-            int find;
-            //Act
-            find = FileTools.FindFile();
-            //Assert
-            Assert.NotEqual(0,find) ;
-        }
+        ///// <summary>
+        ///// Can find the file log?
+        ///// </summary>
+        //[Fact]
+        //public void Find_File()
+        //{
+        //    //Arrange
+        //    int find;
+        //    //Act
+        //    find = FileTools.FindFile();
+        //    //Assert
+        //    Assert.NotEqual(0,find) ;
+        //}
 
         //verificar se o parser está funcionando
 

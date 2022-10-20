@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LoCTfWdIFOciapVeYQpHBpsZAawXMhu01RcleXv23KRdvDUT+Gs7w7cCd/8QYO+8ULgrypP2CT2LutM96rBE4g==",
+  "dgSpecHash": "YT02PeCDSjU2C2HPkTMP4oeFzB52wSEn3vHxtl4YbXZnZ3Idy5QwBxvdU1zBMv9Hl7EbQqXw9DaWTtmyWUUlwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj",
+  "projectFilePath": "C:\\Users\\Kelvin\\source\\repos\\Quake_Game_Log_Parser\\Quake_Game_Log\\Quake_Game_Log\\Quake_Game_Log.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kelvin\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\Kelvin\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\2.0.4\\microsoft.dotnet.platformabstractions.2.0.4.nupkg.sha512",
