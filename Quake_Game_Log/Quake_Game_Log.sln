@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quake_Game_Log", "Quake_Game_Log\Quake_Game_Log.csproj", "{82DCCEF7-D366-4D74-904D-03EF1AF6C53F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quake_Game_Log_Tests", "Quake_Game_Log_Tests\Quake_Game_Log_Tests.csproj", "{719F0D5C-1942-4E3C-9D30-25E4C88524F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82DCCEF7-D366-4D74-904D-03EF1AF6C53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DCCEF7-D366-4D74-904D-03EF1AF6C53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DCCEF7-D366-4D74-904D-03EF1AF6C53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DCCEF7-D366-4D74-904D-03EF1AF6C53F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719F0D5C-1942-4E3C-9D30-25E4C88524F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719F0D5C-1942-4E3C-9D30-25E4C88524F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719F0D5C-1942-4E3C-9D30-25E4C88524F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719F0D5C-1942-4E3C-9D30-25E4C88524F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4845EB71-A30B-4C0F-AC3D-FC3B4414DFFE}
+	EndGlobalSection
+EndGlobal

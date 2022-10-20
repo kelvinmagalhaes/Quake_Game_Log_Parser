@@ -1,0 +1,9 @@
+Infos
+
+1 . O objetivo 1 do programa é agrupar informações sobre cada jogo 
+2. Coletar os dados de morte
+
+Regras>
+1. Quando um jogador é morto pelo <mundo> ele deve perder -1 em mortes gerais
+2. As mortes pelo <mundo> não devem aparecer na de players ou de mortes
+3. As mortes totais devem aparecer incluindo as feitas pelo <mundo>
