@@ -14,13 +14,15 @@ namespace Quake_Game_Log.Source
                 for (int i = 1; i <= count; i++)
                 {
                     Console.WriteLine("It's Analysing Round " + i);
-                    FileTools.AnalysisGame(i);
+                    Analysis.AnalysisGame(i);
                 }
             }
+
             else
             {
                 Console.WriteLine("Files not founded.");
             }
+            Console.ReadKey();
         }
     }
 }
