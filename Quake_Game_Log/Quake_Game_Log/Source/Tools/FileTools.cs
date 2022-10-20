@@ -116,11 +116,7 @@ namespace Quake_Game_Log.Source.Tools
             {
                 var json = new JavaScriptSerializer().Serialize(obj);
                 File.WriteAllText(Paths.AnalysisPath() + i + ".json", json);
-                Console.WriteLine(json);
-            }
-            else
-            {
-                Console.WriteLine("Round " + i + " not ended.");
+                Console.Write("Json created.");
             }
         }
         #endregion

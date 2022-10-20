@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Quake_Game_Log.Source.Base;
 using System.Collections.Generic;
 
@@ -40,7 +41,11 @@ namespace Quake_Game_Log.Source.Tools
                         FileTools.CreateJsonFile(obj, i); // create the json file.
                         return true;
                     }
-                    return false;
+                    else
+                    {
+                        Console.Write("Invalid Round.");
+                        return false;
+                    }
                 }
             }
             else

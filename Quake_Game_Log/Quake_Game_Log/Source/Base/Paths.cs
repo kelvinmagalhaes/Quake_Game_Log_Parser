@@ -35,7 +35,7 @@
         /// <returns>returns the analysis path</returns>
         public static string AnalysisPath()
         {
-            return Analysis = ".\\Log_Rounds\\AnalysisRound";
+            return Analysis = ".\\Log_Rounds\\Analysis\\AnalysisRound";
         }
 
         /// <summary>
