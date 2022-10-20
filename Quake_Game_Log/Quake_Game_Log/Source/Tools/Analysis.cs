@@ -4,12 +4,16 @@ using System.Collections.Generic;
 
 namespace Quake_Game_Log.Source.Tools
 {
+    /// <summary>
+    /// Analisys class
+    /// </summary>
     public class Analysis
     {
         /// <summary>
         /// Analysis round function
         /// </summary>
         /// <param name="i">receives the number of round.</param>
+        /// <returns>True if the match is not null.</returns>
         public static bool AnalysisGame(int i, int count)
         {
             if (i <= count)

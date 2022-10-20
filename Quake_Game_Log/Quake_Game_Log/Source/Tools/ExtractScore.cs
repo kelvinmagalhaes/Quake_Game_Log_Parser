@@ -5,6 +5,9 @@ using System.Text.RegularExpressions;
 
 namespace Quake_Game_Log.Source.Tools
 {
+    /// <summary>
+    /// Extract score players class
+    /// </summary>
     public class ExtractScore
     {
         /// <summary>
@@ -21,7 +24,6 @@ namespace Quake_Game_Log.Source.Tools
             {
                 int start = line.IndexOf(players);
                 int start_score = line.IndexOf(score);
-                //Console.WriteLine(line.Substring(start + 10) + ":" + line.Substring(start_score + 6, 3));
                 rankPlayers.Add(new Rank { Name = line.Substring(start + 10), Score = (Int32.Parse(line.Substring(start_score + 6, 3))) });
             }
 

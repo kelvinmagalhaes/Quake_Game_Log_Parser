@@ -3,6 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace Quake_Game_Log.Source.Tools
 {
+    /// <summary>
+    /// Extract total kills class
+    /// </summary>
     public class ExtractTotalKills
     {
         /// <summary>

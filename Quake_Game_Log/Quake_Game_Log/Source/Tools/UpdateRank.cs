@@ -1,15 +1,22 @@
-﻿using Quake_Game_Log.Source.Base;
-using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
-using System.Text;
+using Quake_Game_Log.Source.Base;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
 namespace Quake_Game_Log.Source.Tools
 {
+    /// <summary>
+    /// Update rank class
+    /// </summary>
     public class UpdateRank
     {
+        /// <summary>
+        /// Update the rank, if the player was killed by <world> the his score receives -1 kill.
+        /// </summary>
+        /// <param name="i">Round</param>
+        /// <param name="playerList">Players list</param>
+        /// <param name="rankPlayers">Rank Players list</param>
         public static void FinalRank(int i,ref List<string> playerList, ref List<Rank> rankPlayers)
         {
             string world = @"<world>";
