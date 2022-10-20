@@ -10,33 +10,38 @@ namespace Quake_Game_Log.Source.Tools
         /// Analysis round function
         /// </summary>
         /// <param name="i">receives the number of round.</param>
-        public static void AnalysisGame(int i)
+        public static bool AnalysisGame(int i, int count)
         {
-            using (StreamReader r = File.OpenText(".\\Log_Rounds\\Round" + i + ".txt"))
+            if (i <= count)
             {
-                string line;
-                int totalKills = 0;
-                List<string> playerList = new List<string>(); //Player List
-                List<string> scoreList = new List<string>();  //Score Players List
-                List<string> groupy = new List<string>();     //Auxiliar variable to Means Death List
-                List<Deaths> meanDeaths = new List<Deaths>(); // Means Death List
-                List<Rank> rankPlayers = new List<Rank>();    //Rank Players
+                using (StreamReader r = File.OpenText(".\\Log_Rounds\\Round" + i + ".txt"))
+                {
+                    string line = null;
+                    int totalKills = 0;
+                    List<string> playerList = new List<string>(); //Player List
+                    List<string> scoreList = new List<string>();  //Score Players List
+                    List<string> groupy = new List<string>();     //Auxiliar variable to Means Death List
+                    List<Deaths> meanDeaths = new List<Deaths>(); // Means Death List
+                    List<Rank> rankPlayers = new List<Rank>();    //Rank Players
 
-                while ((line = r.ReadLine()) != null)
-                {
-                    ExtractPlayers.Players(line, ref playerList);
-                    ExtractScore.Score(line, ref rankPlayers);
-                    ExtractTotalKills.TotalKills(line, ref totalKills, ref groupy);
+                    ReadFile.Read(r, line, ref playerList, ref rankPlayers, ref totalKills, ref groupy);
+
+                    bool isValid = RoundValidation.Validation(ref rankPlayers);
+
+                    if (isValid)// Check if the round is valid, is valid if the score is not null.
+                    {
+                        UpdateRank.FinalRank(i, ref playerList, ref rankPlayers); //Update the final rank 
+                        ExtractMeansDeath.MeansDeathRound(ref groupy, ref meanDeaths); // get the means death and values of the round
+                        Quake obj = ObjMount.QuakeObjMount(i, totalKills, ref playerList, ref rankPlayers, ref meanDeaths); // prepare the object
+                        FileTools.CreateJsonFile(obj, i); // create the json file.
+                        return true;
+                    }
+                    return false;
                 }
-                bool isValid = RoundValidation.Validation(ref rankPlayers);
-                
-                if (isValid)
-                {
-                    UpdateRank.FinalRank(i, ref playerList, ref rankPlayers);
-                    ExtractMeansDeath.MeansDeathRound(ref groupy, ref meanDeaths);
-                    Quake obj = ObjMount.QuakeObjMount(i, totalKills, ref playerList, ref rankPlayers, ref meanDeaths);
-                    FileTools.CreateJsonFile(obj, i);
-                }
+            }
+            else
+            {
+                return false;
             }
         }
     }

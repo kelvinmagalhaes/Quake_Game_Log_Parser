@@ -6,7 +6,7 @@ namespace Quake_Game_Log.Source.Tools
 {
     public class ExtractMeansDeath
     {
-        public static void MeansDeathRound(ref List<string> groupy, ref List<Deaths> meanDeaths)
+        public static bool MeansDeathRound(ref List<string> groupy, ref List<Deaths> meanDeaths)
         {
             var aux = new HashSet<string>(groupy);
             foreach (var item in aux)
@@ -18,6 +18,15 @@ namespace Quake_Game_Log.Source.Tools
                 });
             }
             meanDeaths = meanDeaths.OrderByDescending(x => x.value).ToList();
+
+            if (meanDeaths.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

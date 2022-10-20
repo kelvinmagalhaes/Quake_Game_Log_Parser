@@ -14,7 +14,7 @@ namespace Quake_Game_Log.Source
                 for (int i = 1; i <= count; i++)
                 {
                     Console.WriteLine("It's Analysing Round " + i);
-                    Analysis.AnalysisGame(i);
+                    Analysis.AnalysisGame(i, count);
                 }
             }
 
