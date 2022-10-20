@@ -9,4 +9,7 @@ Example log file is available in [Quake log](https://gist.github.com/cloudwalk-t
 
 This is an example of the result [Example Round Analysis](https://github.com/kelvinmagalhaes/Quake_Game_Log_Parser/blob/main/Quake_Game_Log/Quake_Game_Log/bin/Debug/netcoreapp3.1/Log_Rounds/AnalysisRound19.json)
 
-![Json File](https://github.com/kelvinmagalhaes/Quake_Game_Log_Parser/blob/main/Quake_Game_Log/Docs/Example_json.png)
+
+<p align="center" width="100%">
+    <img width="100%" src="https://github.com/kelvinmagalhaes/Quake_Game_Log_Parser/blob/main/Quake_Game_Log/Docs/Example_json.png">
+    </p>

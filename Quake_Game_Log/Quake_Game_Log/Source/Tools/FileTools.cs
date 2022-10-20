@@ -33,7 +33,7 @@ namespace Quake_Game_Log.Source.Tools
         /// <summary>
         /// Delete files Funcion before a new execution.
         /// </summary>
-        public static void DeleteFiles()
+        public static bool DeleteFiles()
         {
             int lenght = FindFile();
             for (int i = 1; i <= lenght; i++)
@@ -46,6 +46,14 @@ namespace Quake_Game_Log.Source.Tools
                 {
                     File.Delete(Paths.AnalysisPath() + i + ".json");
                 }
+            }
+            if (File.Exists(Paths.RoundPath() + "1.txt"))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
         #endregion

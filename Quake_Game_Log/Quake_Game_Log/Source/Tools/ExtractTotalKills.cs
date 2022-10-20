@@ -11,7 +11,7 @@ namespace Quake_Game_Log.Source.Tools
         /// <param name="line">receives each line of the log</param>
         /// <param name="totalKills">pointer to indicate the total value.</param>
         /// <param name="groupy">pointer to indicate the means death in the round. </param>
-        public static void TotalKills(string line, ref int totalKills, ref List<string> groupy)
+        public static bool TotalKills(string line, ref int totalKills, ref List<string> groupy)
         {
             string killed = @"killed";
 
@@ -25,6 +25,15 @@ namespace Quake_Game_Log.Source.Tools
             if (Regex.IsMatch(line, meansDeath))
             {
                 groupy.Add(Regex.Match(line, meansDeath).Value);
+            }
+
+            if (groupy.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

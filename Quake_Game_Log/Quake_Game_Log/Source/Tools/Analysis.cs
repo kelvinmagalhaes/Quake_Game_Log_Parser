@@ -14,7 +14,7 @@ namespace Quake_Game_Log.Source.Tools
         {
             if (i <= count)
             {
-                using (StreamReader r = File.OpenText(".\\Log_Rounds\\Round" + i + ".txt"))
+                using (StreamReader r = File.OpenText(Paths.RoundPath() + i + ".txt"))
                 {
                     string line = null;
                     int totalKills = 0;

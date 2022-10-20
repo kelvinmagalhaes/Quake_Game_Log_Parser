@@ -10,13 +10,22 @@ namespace Quake_Game_Log.Source.Tools
         /// </summary>
         /// <param name="line"></param>
         /// <param name="playerList">pointer to indicate the players in the round.</param>
-        public static void Players(string line, ref List<string> playerList)
+        public static bool Players(string line, ref List<string> playerList)
         {
             string players = @"client:";
             if (Regex.Match(line, players).Success)
             {
                 int start = line.IndexOf(players);
                 playerList.Add(line.Substring(start + 10));
+            }
+
+            if (playerList.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }
